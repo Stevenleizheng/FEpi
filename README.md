@@ -6,7 +6,7 @@ The primary goal of FEpi is to accurately identify peptidase in multiple predict
 ### Step 1: prepare the environment
 (1) Download the FEpi software from github
 
-````
+``git clone https://github.com/Stevenleizheng/FEpi.git``
 
 (2) Go to the directory of FEpi, for example:
 

@@ -1,0 +1,15 @@
+name: fepi
+channels: 
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python = 3.9
+  - pandas = 2.0
+  - biopython
+  - scipy
+  - tqdm
+  - pip
+  - pip:
+      - fair-esm
+  

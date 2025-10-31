@@ -5,7 +5,13 @@ import torch.nn.functional as F
 
 
 class EnzymeBinary(nn.Module):
-    """binary classification model"""
+    """Binary classification model for peptidase/non-peptidase prediction.
+    
+    Architecture:
+    1. ESM-2 (650M parameters) as base model
+    2. Five-layer MLP head with dimension reduction
+    3. Final classification layer for binary decision
+    """
     def __init__(self, n_class):
         super(EnzymeBinary, self).__init__()
         self.esm = esm.pretrained.esm2_t33_650M_UR50D()[0]
